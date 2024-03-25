@@ -61,10 +61,10 @@ local GENRES = {
     "Travel Through Time",
 }
 
-return Require("ReadWN")("https://www.wuxiap.com", {
+return Require("ReadWN")("https://www.fansmtl.com", {
     id = 1308639968,
-    name = "Wuxiap",
-    shrinkURLNovel = "^.-wuxiap%.com",
+    name = "FansMTL",
+    shrinkURLNovel = "^.-fansmtl%.com",
     hasCloudFlare = true,
 
     genres = GENRES,
@@ -75,28 +75,28 @@ return Require("ReadWN")("https://www.wuxiap.com", {
             increments = false,
             selector = "#latest-updates .novel-list.grid.col .novel-item a",
             url = function(data)
-                return "https://www.wuxiap.com"
+                return "https://www.fansmtl.com"
             end
         },
         {
             name = "Popular Daily Updates",
             increments = true,
             url = function(data)
-                return "https://www.wuxiap.com/list/all/all-lastdotime-" .. (data[PAGE] - 1) .. ".html"
+                return "https://www.fansmtl.com/list/all/all-lastdotime-" .. (data[PAGE] - 1) .. ".html"
             end
         },
         {
             name = "Most Popular",
             increments = true,
             url = function(data)
-                return "https://www.wuxiap.com/list/all/all-onclick-" .. (data[PAGE] - 1) .. ".html"
+                return "https://www.fansmtl.com/list/all/all-onclick-" .. (data[PAGE] - 1) .. ".html"
             end
         },
         {
             name = "New to Web Novels",
             increments = true,
             url = function(data)
-                return "https://www.wuxiap.com/list/all/all-newstime-" .. (data[PAGE] - 1) .. ".html"
+                return "https://www.fansmtl.com/list/all/all-newstime-" .. (data[PAGE] - 1) .. ".html"
             end
         }
     },
