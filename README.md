@@ -6,7 +6,6 @@ Personal extensions for Shosetsu
 
 https://raw.githubusercontent.com/LordGrindelwald/ShosetsuExtensions/master
 
-
 ### Repo Extensions
 - [ReadWN](https://www.readwn.com/)
 - [FanNovel](https://www.fannovel.com/)
