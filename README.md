@@ -11,4 +11,5 @@ https://raw.githubusercontent.com/LordGrindelwald/ShosetsuExtensions/master
 - [ReadWN](https://www.readwn.com/)
 - [FanNovel](https://www.fannovel.com/)
 - [FansMTL](https://www.fansmtl.com/)
+ 
   (Probably broken add from https://raw.githubusercontent.com/lordgrindelwald/f1/master )
