@@ -58,10 +58,10 @@ local GENRES = {
 	"Virtual Reality"
 }
 
-return Require("ReadWN")("https://www.readwn.com", {
+return Require("ReadWN")("https://www.wuxiabox.com", {
 	id = 1308639964,
 	name = "ReadWN",
-	shrinkURLNovel = "^.-readwn%.com",
+	shrinkURLNovel = "^.-wuxiabox%.com",
 	hasCloudFlare = true,
 
 	genres = GENRES,
@@ -72,28 +72,28 @@ return Require("ReadWN")("https://www.readwn.com", {
 			increments = false,
 			selector = "#latest-updates .novel-list.grid.col .novel-item a",
 			url = function(data)
-				return "https://www.readwn.com"
+				return "https://www.wuxiabox.com"
 			end
 		},
 		{
 			name = "Popular Daily Updates",
 			increments = true,
 			url = function(data)
-				return "https://www.readwn.com/list/all/all-lastdotime-" .. (data[PAGE] - 1) .. ".html"
+				return "https://www.wuxiabox.com/list/all/all-lastdotime-" .. (data[PAGE] - 1) .. ".html"
 			end
 		},
 		{
 			name = "Most Popular",
 			increments = true,
 			url = function(data)
-				return "https://www.readwn.com/list/all/all-onclick-" .. (data[PAGE] - 1) .. ".html"
+				return "https://www.wuxiabox.com/list/all/all-onclick-" .. (data[PAGE] - 1) .. ".html"
 			end
 		},
 		{
 			name = "New to Web Novels",
 			increments = true,
 			url = function(data)
-				return "https://www.readwn.com/list/all/all-newstime-" .. (data[PAGE] - 1) .. ".html"
+				return "https://www.wuxiabox.com/list/all/all-newstime-" .. (data[PAGE] - 1) .. ".html"
 			end
 		}
 	},
