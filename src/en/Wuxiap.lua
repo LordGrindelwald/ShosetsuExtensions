@@ -61,7 +61,7 @@ local GENRES = {
     "Travel Through Time",
 }
 
-return Require("Wuxiap")("https://www.wuxiap.com", {
+return Require("ReadWN")("https://www.wuxiap.com", {
     id = 1308639968,
     name = "Wuxiap",
     shrinkURLNovel = "^.-wuxiap%.com",
